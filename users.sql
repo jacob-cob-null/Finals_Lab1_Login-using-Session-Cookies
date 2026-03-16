@@ -1,0 +1,13 @@
+CREATE DATABASE IF NOT EXISTS login_app;
+USE login_app;
+
+CREATE TABLE IF NOT EXISTS users (
+	id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+	name VARCHAR(50) NOT NULL,
+	email VARCHAR(100) NOT NULL UNIQUE,
+	password VARCHAR(255) NOT NULL,
+	signup_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+INSERT INTO `users` (`id`, `email`, `name`, `password`) VALUES
+(1, 'test@test.com', 'Test User', '202cb962ac59075b964b07152d234b70');
