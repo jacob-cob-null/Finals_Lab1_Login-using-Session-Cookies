@@ -46,7 +46,7 @@ include __DIR__ . '/header.php';
             echo $email;
         } elseif (isset($_COOKIE["remember_email"])) {
             echo $_COOKIE["remember_email"];
-        } ?>" placeholder="Enter your Email Id" required>
+        } ?>" placeholder="Enter Email" required>
     </div>
     <div class="col-md-12 form-group">
         <label>Password</label>
